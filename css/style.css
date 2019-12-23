@@ -21,6 +21,8 @@ ul, li {
     display: flex;
     list-style: none;
     margin-top: 0px; }
+  .Navbar .navbar-brand .brand-img-light {
+    width: 80px; }
   .Navbar .navbar-links-toggle {
     display: none;
     color: #f91e14;
