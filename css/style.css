@@ -1004,7 +1004,7 @@ footer {
       display: initial;
       position: absolute;
       cursor: pointer;
-      margin: 20px 45px; }
+      margin: 20px 0px; }
     .Navbar .navbar-items .nav-links .nav-link {
       display: none; }
     .Navbar .navbar-items.navbar-links-show {
