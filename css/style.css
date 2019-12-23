@@ -315,24 +315,30 @@ header {
     font-family: Open-sans, sans-serif; }
     .comments .container #btn-arrow-left {
       float: left; }
-      .comments .container #btn-arrow-left a {
+      .comments .container #btn-arrow-left button {
         font-size: 2rem;
         padding: 15px 20px;
         background: #f91e14;
+        border: 2px solid #f91e14;
         color: #fff; }
-      .comments .container #btn-arrow-left a:hover {
+      .comments .container #btn-arrow-left button:hover {
         background: #fff;
-        color: #f91e14; }
+        border-color: #fff;
+        color: #f91e14;
+        cursor: pointer; }
     .comments .container #btn-arrow-right {
       float: right; }
-      .comments .container #btn-arrow-right a {
+      .comments .container #btn-arrow-right button {
         font-size: 2rem;
         padding: 15px 20px;
         background: #f91e14;
+        border: 2px solid #f91e14;
         color: #fff; }
-      .comments .container #btn-arrow-right a:hover {
+      .comments .container #btn-arrow-right button:hover {
         background: #fff;
-        color: #f91e14; }
+        border-color: #fff;
+        color: #f91e14;
+        cursor: pointer; }
     .comments .container .comment .comment-img {
       width: 20%;
       height: 20%; }

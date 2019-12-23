@@ -1,4 +1,44 @@
 $(document).ready(function() {
+	$("#about-me").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".about-me").offset().top
+		    }, 1000);
+	});
+	$("#features").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".features").offset().top
+		    }, 1000);
+	});
+	$("#offer").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".offer").offset().top
+		    }, 1000);
+	});
+	$("#your-bmi").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".your-bmi").offset().top
+		    }, 1000);
+	});
+	$("#benefits").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".benefits").offset().top
+		    }, 1000);
+	});
+	$("#comments").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".comments").offset().top
+		    }, 1000);
+	});
+	$("#contact").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".contact").offset().top
+		    }, 1000);
+	});
+	$(".btn-light").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $(".about-me").offset().top
+		    }, 1000);
+	});
 	$('#button-calc').click(
 		function sum() {
 			var bmi=0;

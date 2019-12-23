@@ -447,29 +447,35 @@ header{
 		#btn-arrow-left{
 			float:left;
 		
-			a{
+			button{
 				font-size:$h1-h6-large-size-mobile;
 				padding:15px 20px;
 				background:$middle-red;
+				border:2px solid $middle-red;
 				color:$white;
 			}
-			a:hover{
+			button:hover{
 				background:$white;
+				border-color:$white;
 				color:$middle-red;
+				cursor: pointer;
 			}
 		}
 		#btn-arrow-right{
 			float:right;
 			
-			a{
+			button{
 				font-size:$h1-h6-large-size-mobile;
 				padding:15px 20px;
 				background:$middle-red;
+				border:2px solid $middle-red;
 				color:$white;
 			}
-			a:hover{
+			button:hover{
 				background:$white;
+				border-color:$white;
 				color:$middle-red;
+				cursor: pointer;
 			}
 		}
 		.comment{
