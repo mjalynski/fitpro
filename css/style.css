@@ -22,7 +22,8 @@ ul, li {
     list-style: none;
     margin-top: 0px; }
   .Navbar .navbar-brand .brand-img-light {
-    width: 80px; }
+    width: 80px;
+    margin: 20px 0px; }
   .Navbar .navbar-links-toggle {
     display: none;
     color: #f91e14;
@@ -1003,7 +1004,7 @@ footer {
       display: initial;
       position: absolute;
       cursor: pointer;
-      margin: 20px; }
+      margin: 20px 45px; }
     .Navbar .navbar-items .nav-links .nav-link {
       display: none; }
     .Navbar .navbar-items.navbar-links-show {
