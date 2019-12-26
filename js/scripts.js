@@ -1,44 +1,46 @@
 $(document).ready(function() {
+	//scrollowanie po kliknięciu w opcję z menu
 	$("#about-me").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".about-me").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".about-me").offset().top
+		}, 1000);
 	});
 	$("#features").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".features").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".features").offset().top
+		}, 1000);
 	});
 	$("#offer").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".offer").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".offer").offset().top
+		}, 1000);
 	});
 	$("#your-bmi").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".your-bmi").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".your-bmi").offset().top
+		}, 1000);
 	});
 	$("#benefits").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".benefits").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".benefits").offset().top
+		}, 1000);
 	});
 	$("#comments").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".comments").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".comments").offset().top
+		}, 1000);
 	});
 	$("#contact").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".contact").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".contact").offset().top
+		}, 1000);
 	});
 	$(".btn-light").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $(".about-me").offset().top
-		    }, 1000);
+		$('html, body').animate({
+			scrollTop: $(".about-me").offset().top
+		}, 1000);
 	});
+	//obliczanie bmi
 	$('#button-calc').click(
 		function sum() {
 			var bmi=0;
@@ -67,53 +69,75 @@ $(document).ready(function() {
 			console.log(waga);
 		}
 	);
+	//animacja elementów sekcji about-me od rozdzielczości 576px
 	$(window).scroll(function() {
-		var x = window.matchMedia("(min-width: 576px)")
+		var x = window.matchMedia("(min-width: 576px)");
 		if (x.matches) {
 			if ($(document).scrollTop() > 600) {
-				$(".content-1").animate({left: '0px'}, 1000, "linear");
-				$(".content-2").animate({opacity: '1'}, 1000, "linear");
+				$(".move-left").animate({left: '0px'}, 1000, "linear");
+				$(".will-appear").animate({opacity: '1'}, 1000, "linear");
 			}else{
-				$(".content-1").css({left: '-1000px'});
-				$(".content-2").css({opacity: '0'});			
+				$(".move-left").css({left: '-1000px'});
+				$(".will-appear").css({opacity: '0'});			
+			}
+			if ($(document).scrollTop() > 2200) {
+				$(".will-appear-2").animate({opacity: '1'}, 1000, "linear");
+			}else{
+				$(".will-appear-2").css({opacity: '0'});
+			}
+			if ($(document).scrollTop() > 3600) {
+				$(".move-up").animate({top: '0px'}, 500, "linear");
+			}else{
+				$(".move-up").css({top: '500px'});
 			}
 		}
 	});
 });
+//wyświetlanie opinii
 window.onload = function(e) {
-  document.getElementById('input_mass').value = '';
-   document.getElementById('input_height').value = '';
 	var timer=0;
     function comments() {
-	if(timer<0){timer=200;}
-	if(timer<300){timer+=1;}
-	if(timer>=300){timer=0;}
+		if(timer<0){
+			timer=200;
+		}
+		if(timer<300){
+			timer+=1;
+		}
+		if(timer>=300){
+			timer=0;
+		}
         if(timer>=0&&timer<=100){
-		 $("#comment-1").css('display', 'flex');
-		 $("#comment-2").css('display', 'none');
-		 $("#comment-3").css('display', 'none');
+			$("#comment-1").css('display', 'flex');
+			$("#comment-2").css('display', 'none');
+			$("#comment-3").css('display', 'none');
 		}
 		if(timer>=100&&timer<=200){
-		 $("#comment-1").css('display', 'none');
-		 $("#comment-2").css('display', 'flex');
-		 $("#comment-3").css('display', 'none');
+			$("#comment-1").css('display', 'none');
+			$("#comment-2").css('display', 'flex');
+			$("#comment-3").css('display', 'none');
 		}
 		if(timer>=200&&timer<=300){
-		 $("#comment-1").css('display', 'none');
-		 $("#comment-2").css('display', 'none');
-		 $("#comment-3").css('display', 'flex');
+			$("#comment-1").css('display', 'none');
+			$("#comment-2").css('display', 'none');
+			$("#comment-3").css('display', 'flex');
 		}
 	}
 	function classToggle() {
-  const navs = document.querySelectorAll('.navbar-items')
-  
-  navs.forEach(nav => nav.classList.toggle('navbar-links-show'));
-}
-
+		const navs = document.querySelectorAll('.navbar-items')
+		navs.forEach(nav => nav.classList.toggle('navbar-links-show'));
+	}
+//operacje na strzałkach do przewijania opinii
 document.querySelector('.navbar-links-toggle')
-  .addEventListener('click', classToggle);
-		$('#btn-arrow-left').click(function(){timer-=100;});
-		$('#btn-arrow-right').click(function(){timer+=100;});
+	.addEventListener('click', classToggle);
+		$('#btn-arrow-left').click(
+			function(){
+				timer-=100;
+			}
+		);
+		$('#btn-arrow-right').click(
+			function(){
+				timer+=100;
+			}
+		);
 	    setInterval(comments, 100);
 }
-

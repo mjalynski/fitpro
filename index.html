@@ -58,11 +58,11 @@
 	<div class="about-me">
 		<h3>Poznajmy się</h3>
 		<div class="container">
-			<div class="contentbox-1">
+			<div class="contentbox-1 move-left">
 				<h4>Cześć nazywam się Michał</h4>
 				<p>Jestem absolwentem Akademii Wychowania Fizycznego i trenerem personalnym od 5 lat. Po ukończeniu studiów pracowałem jako trener personalny w popularnych siłowniach, co pozwoliło mi spotkać osoby chcące dokonać zmian w swoim życiu. Nastąpił jednak w mojej karierze moment, że postanowiłem działać pod własną marką FITPRO.</p><p>W mojej codziennej pracy pomagam osobom, które chcą dokonać zmian w swoim życiu. Dzięki mojej wiedzy i doświadczeniu pomogam w dokonywaniu pozytywnych zmian, które znajdą odzwierciedlenie m.in. w szczupleszej sylwetce oraz lepszym samopoczuciu. Największą satysfakcję, cieszę z sukcesów i radości moich klientów.</p>
 			</div>
-			<div class="contentbox-2">
+			<div class="contentbox-2 will-appear">
 				<img class="about-img" src="./img/sccpre.cat-bodybuilding-png-1835095-1.png" alt="treningi personalne warszawa">
 			</div>
 		</div>
@@ -74,13 +74,13 @@
 				<div class="feature-icons">
 					<i class="fas fa-dumbbell"></i>
 				</div>
-				<p>Rozwój siły to podstawowy powód, dla którego aż 80% facetów trenuje na siłowni. Odpowiedni trening, dobrze zbilansowana dieta i odpoczynek to prosty przepis na wzrost siły.</p>
+				<p>Rozwój siły to podstawowy powód, dla którego aż 80% facetów trenuje na siłowni. Odpowiedni trening połączony z dobrze zbilansowana dietą i odpoczynkiem, to prosty przepis na wzrost siły.</p>
 			</div>
 			<div class="contentbox">
 				<div class="feature-icons">
 					<i class="fas fa-running"></i>
 				</div>
-				<p>Poprawienie kondycji fizycznej pozwala pokonywać długie dystanse i zwiększać objętość treningową. Wtedy pokonanie kilkunastu kilometrów nie stanowi dla Ciebie większego problemu.</p>
+				<p>Poprawienie kondycji fizycznej pozwala pokonywać długie dystanse i zwiększać objętość treningową. Wtedy pokonanie kilkunastu kilometrów nie stanowi dla Ciebie problemu.</p>
 			</div>
 			<div class="contentbox">
 				<div class="feature-icons">
@@ -99,21 +99,21 @@
 	<div class="offer">
 		<h3>Zobacz co oferuję</h3>
 		<div class="container">
-			<div class="contentbox">
+			<div class="contentbox will-appear-2">
 				<h4>Trening<br>Osobisty</h4>
 				<p class="cost">od 160 zł</p>
 				<p>Wstępna ankieta i analiza przypadku</p>
 				<p>Pomiar składu masy ciała</p>
 				<p>Plan treningowy + wdrożenie</p>
 			</div>
-			<div class="contentbox">
+			<div class="contentbox will-appear-2">
 				<h4>Analiza<br>e-mail</h4>
 				<p class="cost">120 zł</p>
 				<p>Wstępna ankieta i analiza przypadku</p>
 				<p>Plan treningowy bez wdrożenia</p>
 				<p>Rozpisanie diety</p>
 			</div>
-			<div class="contentbox pro">
+			<div class="contentbox pro will-appear-2">
 				<h4>Pakiet<br>VIP</h4>
 				<p class="cost">500 zł</p>
 				<p>Pomiar składu masy ciała</p>
@@ -129,8 +129,8 @@
 				<div class="bmi">
 					<form id="bmi-calc">
 						<h3>WPISZ WAGĘ I WZROST</h3>
-						<input placeholder="Wpisz wagę" id="input_mass" value="0">
-						<input placeholder="Wpisz wzrost" id="input_height" value="0">
+						<input placeholder="Wpisz wagę" id="input_mass" value="">
+						<input placeholder="Wpisz wzrost" id="input_height" value="">
 						<br>
 					</form>
 					<button id="button-calc">POKAŻ WYNIK</button>
@@ -145,8 +145,8 @@
 	<div class="about">
 		<div class="container">
 			<div class="contentbox-1">
-				<div class="benefits">
-					<h3>Trenując ze mną zyskujesz</h3>
+				<h3>Trenując ze mną zyskujesz</h3>
+				<div class="benefits move-up">
 					<ul>
 						<li>
 							<i class="fas fa-plus"></i>
@@ -173,10 +173,10 @@
 		<h3>Odwiedź mój profil </h3>
 		<div class="container">
 			<div class="contentbox">
-				<a class="social-icon" href="/"><i class="fab fa-facebook"></i></a>
-				<a class="social-icon" href="/"><i class="fab fa-instagram"></i></a>
-				<a class="social-icon" href="/"><i class="fab fa-twitter"></i></a>
-				<a class="social-icon" href="/"><i class="fab fa-youtube"></i></a>
+				<a class="social-icon" href="https://www.facebook.com/" rel="nofollow"><i class="fab fa-facebook"></i></a>
+				<a class="social-icon" href="https://www.instagram.com/" rel="nofollow"><i class="fab fa-instagram"></i></a>
+				<a class="social-icon" href="https://twitter.com/" rel="nofollow"><i class="fab fa-twitter"></i></a>
+				<a class="social-icon" href="https://www.youtube.com/" rel="nofollow"><i class="fab fa-youtube"></i></a>
 			</div>
 		</div>
 	</div>
@@ -217,9 +217,9 @@
 			<div class="contentbox-1">
 				<h3 class="blue-heading">Napisz do mnie</h3>
 				<form class="contact-form" action="/action_page.php">
-					<input type="text" id="fname" name="firstname" placeholder="WPISZ IMIĘ">
-					<input type="text" id="lname" name="lastname" placeholder="WPISZ E-MAIL"><br>
-					<textarea id="subject" name="subject" placeholder="WPISZ TREŚĆ"></textarea><br>
+					<input type="text" class="form-name" id="fname" name="firstname" placeholder="WPISZ IMIĘ" pattern="[A-Za-z]{2,99}" required>
+					<input type="text" class="form-email" id="lname" name="lastname" placeholder="WPISZ E-MAIL" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required><br>
+					<textarea class="form-subject" id="subject" name="subject" placeholder="WPISZ TREŚĆ" required></textarea><br>
 					<input id="button-send" type="submit" value="WYŚLIJ">
 				 </form>
 			</div>

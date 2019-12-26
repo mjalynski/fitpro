@@ -1158,6 +1158,7 @@ footer{
 						width:50%;
 						padding:10px;
 						font-size:$p-size-desktop;
+						margin-top: 5px;
 					}
 					.bmi-contentbox{
 						#bmi-score{
@@ -1189,6 +1190,7 @@ footer{
 					text-align: center;
 				}
 				.benefits{
+					position:relative;
 					ul{
 						padding: 0px 30px;
 						
@@ -1854,6 +1856,13 @@ footer{
 	.container{
 		padding-left:$middle-padding;
 		padding-right:$middle-padding;
+	}
+	.Navbar {
+		.navbar-items {
+			.nav-links{
+				margin-top:30px;
+			}
+		}
 	}
 	header{
 		.container{
